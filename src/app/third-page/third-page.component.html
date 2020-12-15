@@ -1,0 +1,6 @@
+<div style="width: 100vw; height: 100vh; background-color: aquamarine;">
+  <h1>Third Page</h1>
+  <input id="go" class="focusable" style="width: 400px;" [(ngModel)]="myInput" (keyup.enter)="send()">
+  <button (click)="send()">Send</button>
+  <p *ngIf="sent">{{myInput}}</p>
+</div>
